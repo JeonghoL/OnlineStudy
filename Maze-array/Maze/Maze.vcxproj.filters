@@ -27,6 +27,15 @@
     <ClCompile Include="Vector.cpp">
       <Filter>DataStructure</Filter>
     </ClCompile>
+    <ClCompile Include="TimeComplexity.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MazeMap.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Array.h">
@@ -34,6 +43,12 @@
     </ClInclude>
     <ClInclude Include="Vector.h">
       <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Main</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
