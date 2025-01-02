@@ -1,11 +1,20 @@
 #include "pch.h"
-#include <iostream>
-#include "Array.h"
 #include "Vector.h"
+#include "Board.h"
+#include "Player.h"
 
-using namespace std;
+Board board;
+Player player;
 
 int main()
 {
+	while (true)
+	{
+		// 입력
 
+		// 로직
+
+		// 렌더링
+		board.Render();
+	}
 }
