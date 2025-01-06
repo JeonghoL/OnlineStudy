@@ -3,6 +3,7 @@
 #include "Types.h"
 #include <Windows.h>
 #include <iostream>
+#include <random>
 
 using namespace std;
 
@@ -49,3 +50,11 @@ enum Dir
 
 	DIR_COUNT = 4
 };
+
+inline int MyRandom(int min, int max)
+{
+	static random_device rd;
+	static mt19937 gen(rd());
+	uniform_int_distribution<int> dis(min, max);
+	return dis(gen);
+}
