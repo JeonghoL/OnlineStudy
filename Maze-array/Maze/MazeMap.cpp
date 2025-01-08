@@ -6,8 +6,19 @@
 Board board;
 Player player;
 
+#include "Stack.h"
+
 int main()
 {
+	/*Stack<int> st;
+	
+	st.push(1);
+	st.push(2);
+	st.push(3);
+
+	int a = st.top();
+	st.pop();*/
+
 	board.Init(25, &player);
 	player.Init(&board);
 
