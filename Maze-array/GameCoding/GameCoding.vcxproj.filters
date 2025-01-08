@@ -18,10 +18,16 @@
     <ClCompile Include="GameCoding.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="GameCoding2.cpp">
+    <ClCompile Include="Stack&amp;Queue.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="GameCoding3.cpp">
+    <ClCompile Include="Recursion.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Priority Queue(우선순위 큐).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
