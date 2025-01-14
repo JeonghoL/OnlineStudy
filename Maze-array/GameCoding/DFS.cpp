@@ -5,7 +5,7 @@ using namespace std;
 
 // DFS (depth first search)
 // DFS = 재귀함수 = 스택
-// BFS = 
+// BFS = 너비 우선 탐색 (breath first search) = 큐
 
 struct Vertex
 {
