@@ -24,9 +24,9 @@ void Board::Render()
 	ConsoleHelper::SetCursorPosition(0, 0);
 	ConsoleHelper::ShowConsoleCursor(false);
 
-	for (int32 y = 0; y < 25; ++y)
+	for (int32 y = 0; y < _size; ++y)
 	{
-		for (int32 x = 0; x < 25; ++x)
+		for (int32 x = 0; x < _size; ++x)
 		{
 			ConsoleColor color = GetTileColor(Pos(y, x));
 			ConsoleHelper::SetCursorColor(color);

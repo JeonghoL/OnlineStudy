@@ -4,7 +4,8 @@
 #include <Windows.h>
 #include <iostream>
 #include <random>
-
+#include <vector>
+#include <queue>
 using namespace std;
 
 struct Pos

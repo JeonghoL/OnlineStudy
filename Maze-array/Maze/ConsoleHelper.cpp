@@ -18,7 +18,7 @@ void ConsoleHelper::ShowConsoleCursor(bool flag)
 {
 	HANDLE output = ::GetStdHandle(STD_OUTPUT_HANDLE);
 	CONSOLE_CURSOR_INFO cursorInfo;
-	::SetConsoleCursorInfo(output, &cursorInfo);
+	::GetConsoleCursorInfo(output, &cursorInfo);
 	cursorInfo.bVisible = flag;
 	::SetConsoleCursorInfo(output, &cursorInfo);
 }
