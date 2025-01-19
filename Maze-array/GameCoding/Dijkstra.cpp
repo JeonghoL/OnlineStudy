@@ -28,8 +28,9 @@ void CreateGraph()
 	adjacent[4][5] = adjacent[5][4] = 5;
 }
 
-struct VertexCost
+class VertexCost
 {
+public:
 	VertexCost(int cost, int vertex) : cost(cost), vertex(vertex){}
 
 	bool operator<(const VertexCost& other) const
@@ -42,6 +43,10 @@ struct VertexCost
 		return cost > other.cost;
 	}
 
+	int getCost() { return cost; }
+	int getVertex() { return vertex; }
+
+private:
 	int cost;
 	int vertex;
 };
@@ -62,8 +67,8 @@ void Dijkstra(int here)
 		VertexCost v = pq.top();
 		pq.pop();
 
-		int cost = v.cost;
-		here = v.vertex;
+		int cost = v.getCost();
+		here = v.getVertex();
 
 		// ´õ ÂªÀº °æ·Î¸¦ µÚ´Ê°Ô Ã£¾Ò´Ù¸é ½ºÅµ
 		if (best[here] < cost)
